@@ -16,12 +16,12 @@ body > img{
 
 @font-face {
     font-family: 'Hylian';
-    src: url('fonts/HyliaSerifBeta-Regular.otf') format('opentype');
+    src: url('font/HyliaSerifBeta-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Bobacups';
-    src: url('fonts/Boba\ Cups.ttf') format('truetype');
+    src: url('font/Boba\ Cups.ttf') format('truetype');
 }
 
 @font-face {
