@@ -48,7 +48,7 @@ body > img{
     width: 88px;
     padding-left: 30px;
     padding-top: 24px;
-    margin-right: 1000px;
+    margin-right: 948px;
 }
 
 .cabecalho{
@@ -72,10 +72,11 @@ body > img{
 
 .cabecalho > a{
     font-family: 'Bobacups';
+    font-size: 22px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding-right: 14px;
-    padding-left: 2px;
+    padding-left: 8px;
     margin-right: 2px;
     margin-left: 2px;
     text-align: center;
