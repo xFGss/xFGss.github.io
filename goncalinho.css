@@ -3,11 +3,14 @@ body{
     padding: 0px;
     height: 1500px;
     overflow: hidden;
-    background-color: #1B1B1B;
+    background-color: black;
+    background-image: url('img/bgtest.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
 }
 
 body > img{
@@ -27,6 +30,11 @@ body > img{
 @font-face {
     font-family: 'Botw';
     src: url('fonts/The\ Wild\ Breath\ of\ Zelda.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Snow';
+    src: url('font/SnowtopCaps.otf') format('opentype')
 }
  
 
@@ -52,6 +60,7 @@ body > img{
 }
 
 .cabecalho{
+    display: flex;
     font-family: 'Bobacups';
     width: 100%;
     background-color: black;
@@ -62,7 +71,7 @@ body > img{
     border-right: 0px;
     border-color: white;
     border-style: solid;
-    height: 140px;
+    height: 14%;
     align-items: center;
     position: fixed;
     animation: forwards;
@@ -71,17 +80,15 @@ body > img{
 }
 
 .cabecalho > a{
-    font-family: 'Bobacups';
-    font-size: 18px;
+    font-family: 'Snow';
+    font-size: 50%;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding-right: 14px;
-    padding-left: 8px;
-    margin-right: 2px;
-    margin-left: 2px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    padding-top: 2%;
+    margin-left: 5%;
+    text-align: right;
+    align-items: right;
+    justify-content: right;
 }
 
 .cabecalho > a:hover{
@@ -106,9 +113,9 @@ body > img{
 }
 
 .org > p {
-    color: whitesmoke;
+    color: purple;
     max-width: 488px;
-    font-family: 'Arial';
+    font-family: 'Bobacups';
     margin-left: 50px;
 }
 
@@ -121,188 +128,58 @@ body > img{
     text-align: left;
 }
 
-.downloads {
-    margin-left: 68px;
-    text-decoration: none;
-    font-size: 128%;
-    padding-top: 10%;
+input[type=text], select {
+  width: 20%;
+  font-family: 'Verdana';
+  background-color: rgb(43, 42, 42);
+  padding: 12px 18px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.downloads a{
-    display: flex;
-    margin-left: 68px;
-    text-decoration: none;
-    font-family: 'Bobacups';
-    font-size: 88%;
-    padding-top: 1%;
-    color: rgb(74, 130, 214);
+input[type=password], select {
+  width: 20%;
+  font-family: 'Verdana';
+  background-color: rgb(43, 42, 42);;
+  padding: 12px 18px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.downloads > p {
-    color: whitesmoke;
-    max-width: 488px;
-    font-family: 'Arial';
-    margin-left: 50px;
+input[type=submit] {
+  width: 20%;
+  font-family: 'Verdana';
+  font-size: 80%;
+  background-color: rgb(43, 42, 42);
+  color:  white;
+  padding: 14px 18px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.downloads > img {
-    margin-left: 60px;
-    width: 100%;
-    height: 100%; 
-    max-width: 368px;
-    align-items: left;
-    text-align: left;
+.modal-body{
+background-color: #1B1B1B;
 }
 
-.zeldadownloads > img {
-    margin-top: 400px;
-    width: 180px;
-    text-align: center;
-    align-items: center;
+.modal-body > h4{
+color: white;
+font-size: 140%;
+font-family: 'Snow';
 }
 
-.zeldadownloads{
-    font-size: 40;
-    color: white;
-    text-align: center;
-    align-items: center;
+.registerfgs{
+color: White;
+font-family: 'Bobacups';
+font-size: 80%;
 }
-
-.zeldabtn {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background-color:transparent;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-    font-size: 20px;
-	font-family:Arial;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
-.zeldabtn:hover {
-	background-color:transparent;
-}
-.zeldabtn:active {
-	position:relative;
-	top:1px;
-}
-
-.objetivo {
-    margin-left: 68px;
-    text-decoration: none;
-    font-size: 148%;
-    padding-top: 14%;
-    color: whitesmoke;
-    max-width: 1068px;
-    font-family: 'Arial';
-}
-
-.btn1 {
-	box-shadow: 0px 10px 18px -7px #ffa200;
-	background:linear-gradient(to bottom, #ff7700 5%, #ffaa00 100%);
-	background-color:#ff7700;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffa200;
-}
-.btn1:hover {
-	background:linear-gradient(to bottom, #ffaa00 5%, #ff7700 100%);
-	background-color:#ffaa00;
-}
-.btn1:active {
-	position:relative;
-	top:1px;
-}
-
-.btn2 {
-	box-shadow: 0px 10px 18px -7px (74, 130, 214);
-	background:linear-gradient(to bottom, rgb(74, 130, 214) 5%, rgb(22, 72, 146) 100%);
-	background-color:#ff7700;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px rgb(74, 130, 214);
-    margin-top: 80px;
-    margin-left: 168px;
-}
-.btn2:hover {
-	background:linear-gradient(to bottom, rgb(74, 130, 214) 5%, rgb(22, 72, 146) 100%);
-	background-color:#ffaa00;
-}
-.btn2:active {
-	position:relative;
-	top:1px;
-}
-
-.btn3 {
-	box-shadow: 0px 10px 18px -7px #ffa200;
-	background:linear-gradient(to bottom, #ff7700 5%, #ffaa00 100%);
-	background-color:#ff7700;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffa200;
-    margin-top: 15px;
-    margin-left: 168px;
-}
-.btn3:hover {
-	background:linear-gradient(to bottom, #ffaa00 5%, #ff7700 100%);
-	background-color:#ffaa00;
-}
-.btn3:active {
-	position:relative;
-	top:1px;
-}
-
-.btn4 {
-	box-shadow: 0px 10px 18px -7px #ffa200;
-	background:linear-gradient(to bottom, #ff7700 5%, #ffaa00 100%);
-	background-color:#ff7700;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffa200;
-    margin-top: 15px;
-    margin-left: 168px;
-}
-.btn4:hover {
-	background:linear-gradient(to bottom, #ffaa00 5%, #ff7700 100%);
-	background-color:#ffaa00;
-}
-.btn4:active {
-	position:relative;
-	top:1px;
-}
-
-
 
 .iframe {
     margin-left: 128px;

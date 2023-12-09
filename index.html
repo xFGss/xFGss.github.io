@@ -4,25 +4,37 @@
             <title>fGs's Hall</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+            <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
             <link rel="shortcut icon" type="x-icon" href="img/logo.jpg">
         </head>
     <body>
             <div class="cabecalho"><img src="img/logo.jpg">
                     <a href="index.html">Main Page</a>
                     <a href="downloadspc.html">Downloads PC</a>
-                    <a href="ps3vault.html">PS3 Vault</a>
-                    <a href="ps4vault.html">Ps4 Vault</a>
-                    <a href="zeldavault.html">Zelda Vault</a>
-                    <a href="discord.html">Discord</a>
+                    <a href="discord.html">Discord</a><br><br>
+                    <a class="login-trigger" href="#" data-target="#login" data-toggle="modal" onclick="loginBtn">Login</a>
+                    <a class="register-trigger" href="register.html">Register</a>
                 </div>
             <div class="org">
-                <p>fGs Main Vault<br></p>
-                
-                <p><br><br><br><br>Este Website foi criado por mim (fGs) com o intuito de providenciar cheats e outros softwares para download como forma de ajuda!  </p>
-                
-                <p>Apenas para fins educativos, não me responsabilizo por qualquer uso ilegal dos softwares providenciados!</p>
 
+                <div id="login" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+              
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <button data-dismiss="modal" class="close">&times;</button>
+                          <h4>Login</h4>
+                          <form>
+                            <input type="text" name="username" class="username form-control" placeholder="Username" /><br>
+                            <input type="password" name="password" class="password form-control" placeholder="password" /><br>
+                            <input class="btn login" type="submit" value="Login" />
+                          </form>
+                        </div>
+                      </div>
 
+                      <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                      <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
                 
         </div>
     </body>
