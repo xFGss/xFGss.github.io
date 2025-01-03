@@ -1,3 +1,8 @@
-//function playAudio(url) {new Audio(url).play();}
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".hamburger-menu");
+    const menu = document.querySelector(".menu");
 
-let play = function(){document.getElementById("audio").play()}
+    menuButton.addEventListener("click", function () {
+        menu.classList.toggle("show");
+    });
+});
