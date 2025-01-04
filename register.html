@@ -1,54 +1,61 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - fGs's Hall</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="goncalinho.css">
-        <head>
-            <title>fGs's Hall</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-            <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-            <link rel="shortcut icon" type="x-icon" href="img/logo.jpg">
-        </head>
-    <body>
-            <div class="cabecalho"><img src="img/logo.jpg">
-                    <a href="index.html">Main Page</a>
-                    <a href="downloadspc.html">Downloads PC</a>
-                    <a href="discord.html">Discord</a><br><br>
-                    <a class="login-trigger" href="#" data-target="#login" data-toggle="modal" onclick="loginBtn">Login</a>
-                    <a class="register-trigger" href="register.html">Register</a>
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <button class="hamburger-menu">☰</button>
+        <nav class="menu">
+            <a href="index.html">Main Page</a>
+            <a href="downloadspc.html">Downloads PC</a>
+            <a href="discord.html">Discord</a>
+            <a class="login-trigger" href="#" data-toggle="modal" data-target="#login">Login</a>
+            <a class="register-trigger" href="register.html">Register</a>
+        </nav>
+    </header>
+    <div class="org">
+        <h1>Create Your Account</h1>
+        <form action="register.php" class="register-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="usn" placeholder="Enter your username" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="psw" placeholder="Enter your password" required><br>
+
+            <input type="submit" value="Register" class="btn btn-primary">
+        </form>
+    </div>
+    <div id="login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button data-dismiss="modal" class="close">&times;</button>
+                    <h4>Login</h4>
+                    <form>
+                        <input type="text" name="username" class="form-control" placeholder="Username" required><br>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required><br>
+                        <input class="btn btn-primary" type="submit" value="Login">
+                    </form>
                 </div>
-            <div class="org">
-
-                <div class="registerfgs" id="register">
-                    <form action="register.php">
-                    <label for="Username"></label>
-                    <input type="text" id="username" name="usn" placeholder="Username"><br><br>
-                    <label for="Email"></label>
-                    <input type="text" id="email" name="email" placeholder="Email"><br><br>
-                    <label for="Password"></label>
-                    <input type="password" id="password" name="psw" placeholder="Password"><br><br>
-                    <input type="submit" value="Submit">
-                  </form>
-
-              </div>
-
-                <div id="login" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-              
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <button data-dismiss="modal" class="close">&times;</button>
-                          <h4>Login</h4>
-                          <form>
-                            <input type="text" name="username" class="username form-control" placeholder="Username" /><br>
-                            <input type="password" name="password" class="password form-control" placeholder="password" /><br>
-                            <input class="btn login" type="submit" value="Login" />
-                          </form>
-                        </div>
-                      </div>
-
-                      <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-                      <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-                
+            </div>
         </div>
-    </body>
-</HTML>
+    </div>
+    <script src="zelda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
