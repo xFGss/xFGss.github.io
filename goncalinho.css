@@ -132,6 +132,16 @@ html {
     text-align: center;
 }
 
+.org img {
+    width: 40%;
+    height: 40%;
+    padding-right: 3%;
+}
+
+.org p img {
+    width: 80%;
+}
+
 .org ul {
     list-style: none;
     padding: 0;
